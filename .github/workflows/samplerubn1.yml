@@ -2,8 +2,7 @@ name: first run
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 jobs:
   my_new_job:
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Print a message
         run: echo "Hello, GitHub Actions!"
